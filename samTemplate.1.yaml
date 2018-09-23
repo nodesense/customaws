@@ -35,7 +35,6 @@ Resources:
       Handler: movies.handler
       Runtime: nodejs8.10
       CodeUri: ./
-      Policies: AmazonDynamoDBFullAccess
       Events:
         MoviesApi:
           Type: Api

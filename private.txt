@@ -1,2 +1,0 @@
-"accessKeyId": "AKIAJ2JFDNP7JW3FGKCQ", 
-  "secretAccessKey": "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",
