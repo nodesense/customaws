@@ -14,3 +14,16 @@ Resources:
           Properties:
             Path: /TimeResource
             Method: GET
+
+    GetCategoriesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: category.handler
+      Runtime: nodejs6.10
+      CodeUri: ./
+      Events:
+        CategoriesApi:
+          Type: Api
+          Properties:
+            Path: /categories
+            Method: GET
