@@ -27,3 +27,17 @@ Resources:
           Properties:
             Path: /categories
             Method: GET
+
+    
+    GetMoviesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: movies.handler
+      Runtime: nodejs8.10
+      CodeUri: ./
+      Events:
+        MoviesApi:
+          Type: Api
+          Properties:
+            Path: /movies
+            Method: GET
